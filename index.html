@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Interactiva</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📚 Malla Ingeniería Comercial</h1>
+
+<div class="malla">
+
+  <div class="semestre">
+    <h2>Semestre 1</h2>
+    <div class="ramo" data-id="administracion" onclick="aprobar(this)">Administración</div>
+    <div class="ramo" data-id="algebra" onclick="aprobar(this)">Álgebra</div>
+    <div class="ramo" data-id="ingles0" onclick="aprobar(this)">Introducción al Inglés</div>
+  </div>
+
+  <div class="semestre">
+    <h2>Semestre 2</h2>
+    <div class="ramo bloqueado" data-id="calculo1" data-req="algebra" onclick="aprobar(this)">
+      Cálculo I
+    </div>
+    <div class="ramo bloqueado" data-id="ingles1" data-req="ingles0" onclick="aprobar(this)">
+      Comunicación en Inglés I
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
